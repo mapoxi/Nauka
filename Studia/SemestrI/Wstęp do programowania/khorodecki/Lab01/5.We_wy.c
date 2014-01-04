@@ -34,19 +34,19 @@
 
 
 
-void main()
+int main()
 
 
 {
 
 
-int liczba; /* deklaracja zmiennej liczba czyli nazwa typu zmiennej oraz jej nazwa*/
+int inna_zmienna; /* deklaracja zmiennej inna_zmienna czyli nazwa typu zmiennej oraz jej nazwa*/
 
 
 
 
 
-liczba = 5; /* nadanie zmiennej liczba wartoœci 5 */
+inna_zmienna = 5; /* nadanie zmiennej inna_zmienna wartoœci 5 */
 
 
      printf("To jest pierwszy program\n");
@@ -55,7 +55,7 @@ liczba = 5; /* nadanie zmiennej liczba wartoœci 5 */
      printf("wypisujacy liczby.\n");
 
 
-     printf("oto ona: %d",liczba);
+     printf("oto ona: %d\n",inna_zmienna);
 
-
+return 0;
 }
