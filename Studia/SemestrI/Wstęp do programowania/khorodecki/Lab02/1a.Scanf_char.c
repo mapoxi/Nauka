@@ -3,7 +3,7 @@
  /*wywo³anie biblioteki*/
 
 
-void main()
+int main()
 
 /*glowna funkcja programu */
 {
@@ -65,7 +65,7 @@ scanf("%c%c",&litera,&litera2);
      printf("wypisuje litere ktora podales/las:");
 
 
-     printf("oto pierwsza: %d a to druga: %d",litera,litera2);
+     printf("oto pierwsza: %c a to druga: %c",litera,litera2);
 
-
+return 0;
 }
