@@ -20,10 +20,10 @@ int liczba2;
      printf("To jest pierwszy program\n");
 
 
-     printf("wczytuj¹cy i wypisuj¹cy 2 liczby.\n");
+     printf("wczytujacy i wypisujacy 2 liczby.\n");
 
 
-     printf("podaj 2 liczby wciskaj¹c enter po pierwszej z nich.\n");
+     printf("podaj 2 liczby wciskajac enter po pierwszej z nich.\n");
 
 
 
@@ -65,7 +65,7 @@ scanf("%d%d",&liczba,&liczba2);
      printf("wypisuje liczbe ktora podales/las:");
 
 
-     printf("oto pierwsza: %d a to druga: %d",liczba,liczba2);
+     printf("oto pierwsza: %d a to druga: %d\n",liczba,liczba2);
 
 return 0;
 }

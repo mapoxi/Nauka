@@ -9,8 +9,9 @@ int main()
 {
 
 
-int litera; /* deklaracja zmiennej litera czyli nazwa typu zmiennej oraz jej nazwa*/
-int litera2;
+char litera; /* deklaracja zmiennej litera czyli nazwa typu zmiennej oraz jej nazwa*/
+char litera2;
+char enter;
 
 
 
@@ -20,16 +21,16 @@ int litera2;
      printf("To jest pierwszy program\n");
 
 
-     printf("wczytuj¹cy i wypisuj¹cy 2 litery.\n");
+     printf("wczytujacy i wypisujacy 2 litery.\n");
 
 
-     printf("podaj 2 litery wciskaj¹c enter po pierwszej z nich.\n");
+     printf("podaj 2 litery wciskajac enter po pierwszej z nich.\n");
 
 
 
 
 
-scanf("%c%c",&litera,&litera2);
+scanf("%c%c%c",&litera,&enter,&litera2);
 
 
 /*
@@ -65,7 +66,7 @@ scanf("%c%c",&litera,&litera2);
      printf("wypisuje litere ktora podales/las:");
 
 
-     printf("oto pierwsza: %c a to druga: %c",litera,litera2);
+     printf("oto pierwsza: %c a to druga: %c\n",litera,litera2);
 
 return 0;
 }
