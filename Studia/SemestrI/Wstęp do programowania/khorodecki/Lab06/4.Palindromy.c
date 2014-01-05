@@ -3,10 +3,10 @@
 int main(){
 
 	char tablica[100];
-	int licznik = 0;
-	char litera = a;
+	int i = 0;
+	char litera = 'a';
 	
-	printf("Wpisz s³owo, ktore chcesz sprawdzic. Zakoncz Enterem: ");
+	printf("Wpisz slowo, ktore chcesz sprawdzic. Zakoncz Enterem: ");
 	
 	while ((int)litera != 10){
 		scanf("%c", &litera);
