@@ -8,7 +8,7 @@ int main(){
 	
 	printf("Podaj liczby do wrzucenia do tablicy (nie wiecej niz 50)\n");
 	
-	while (i<50 || warunek<0){
+	while (i<50 && warunek<0){
 		scanf("%d",&warunek);
 		tablica[i] = warunek;
 		if(warunek >= 0) i = i+1;
