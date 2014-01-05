@@ -18,7 +18,8 @@ int main(){
                    printf("*");
                    i = i+1;
                    }
-     printf("\n"); 
+     printf("\n");
+     h = h-1; 
     
     
     }
