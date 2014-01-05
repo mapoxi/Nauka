@@ -14,12 +14,13 @@ int main(){
 		scanf("%c", &litera);
 		if ((int)litera != 10){
 			tablica[i] = litera;
-			i = i+1;
 			}
+		i = i+1;
 		}
 	
+	i = i-1;
 	pocz = 0;
-	kon = i-1;
+	kon = i;
 	
 	while (kon >=0 && warunek == 0){
 		if(tablica[pocz] != tablica[kon]) warunek = 1;
