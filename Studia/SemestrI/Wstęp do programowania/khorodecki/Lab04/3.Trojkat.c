@@ -27,7 +27,7 @@ int main(){
                 printf(" ");
                 spacja = spacja-1;
                 }
-        while (licznik < wiersz || wykonane <=wejscie){
+        while (licznik < wiersz && wykonane <=wejscie){
 			printf("%4d",wykonane);
 			licznik = licznik+1;
 			wykonane = wykonane+1;
