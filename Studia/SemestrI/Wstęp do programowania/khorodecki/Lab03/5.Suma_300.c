@@ -58,10 +58,10 @@
  srednia = suma/licznik; 
 
  
-printf("oto suma liczb %f",suma);
+printf("oto suma liczb %f\n",suma);
 
  
-printf("a to ich wartosc srednia %f",srednia);
+printf("a to ich wartosc srednia %f\n",srednia);
 
  
 

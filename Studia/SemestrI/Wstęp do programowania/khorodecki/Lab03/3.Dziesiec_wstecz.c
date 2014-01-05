@@ -4,7 +4,7 @@ int main(){
 
 int licznik = 10;
 
-while (licznik > 1){
+while (licznik > 0){
 	printf("%d ",licznik);
 	licznik = licznik -1;
 	}

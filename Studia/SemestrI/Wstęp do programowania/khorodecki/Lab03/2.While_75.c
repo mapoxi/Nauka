@@ -35,7 +35,7 @@ licz_przeb = 75; /* najpierw liczba przebiegów petli while jest zero*/
      while (licz_przeb < 85){ /*dopóki licznik nie przekroczy wartoœci 10, wykonaj*/
 
 
-           printf("Kazdy programista umie zorganizowac petle while");
+           printf("Kazdy programista umie zorganizowac petle while\n");
 
 
            licz_przeb = licz_przeb + 1; /*zwiekszamy licznik przebiegow petli*/
