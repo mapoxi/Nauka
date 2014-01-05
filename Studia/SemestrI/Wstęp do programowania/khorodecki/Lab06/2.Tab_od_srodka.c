@@ -2,7 +2,7 @@
 
 int main(){
     
-    int i[3];
+    int i = 3;
     /* omijam preambu³ê programu .. */
 
     int tab[8];
