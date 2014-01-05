@@ -24,7 +24,7 @@ int main(){
           }
     i = 4;
     
-    while (i>=7){
+    while (i<=7){
           printf("%d ",tab[i]);
           i = i+1;
           }
