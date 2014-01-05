@@ -19,6 +19,6 @@ while(petla < h){
 	i = 0;
 	a = a+1;
 	petla = petla+1;
-
+	}
 return 0;
 }
