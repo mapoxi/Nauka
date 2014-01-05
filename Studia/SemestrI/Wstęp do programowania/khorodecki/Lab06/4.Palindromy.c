@@ -22,7 +22,6 @@ int main(){
 	
 	while (kon >=0 && warunek == 0){
 		if(tablica[pocz] != tablica[kon]) warunek = 1;
-		printf("%c    %c\n",tablica[pocz],tablica[kon]);
 		pocz = pocz+1;
 		kon = kon-1;
 		}
