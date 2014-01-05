@@ -3,7 +3,7 @@
 
 int main(){
 	
-	int licznik;
+	int licznik = 0;
 	int suma;
 	int liczba = 3;
 	int dzielna;
