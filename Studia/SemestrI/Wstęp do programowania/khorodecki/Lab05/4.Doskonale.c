@@ -19,7 +19,7 @@ int main(){
 			}
 
 		if(liczba == suma){
-			printf("%d %d\n",licznik,liczba);
+			printf("%d\n",liczba);
 			licznik = licznik+1;
 			}
 			
