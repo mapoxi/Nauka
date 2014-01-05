@@ -12,9 +12,7 @@ int main(){
 	
 	while ((int)litera != 10){
 		scanf("%c", &litera);
-		if ((int)litera != 10){
-			tablica[i] = litera;
-			}
+		if ((int)litera != 10) tablica[i] = litera;
 		i = i+1;
 		}
 	
@@ -31,7 +29,7 @@ int main(){
 	
 	printf("\nSlowo ");
 	pocz = 0;
-	while(pocz <= i){
+	while(pocz < i){
 		printf("%c",tablica[pocz]);
 		pocz = pocz+1;
 		}
