@@ -21,12 +21,20 @@ int main(){
 	pocz = 0;
 	kon = i;
 	
-	while (koniec <=0 && warunek == 0){
+	while (kon <=0 && warunek == 0){
 		if(tablica[pocz] != tablica[kon]) warunek = 1;
 		pocz = pocz+1;
 		kon = kon-1;
 		}
-		
+	
+	printf("\nSlowo ");
+	pocz = 0;
+	while(pocz <= i){
+		printf("%c",tablica[pocz]);
+		pocz = pocz+1;
+		}
+	if (warunek == 1) printf(" nie");
+	printf(" jest palindromem.\n");
 
 	return 0;
 	}
