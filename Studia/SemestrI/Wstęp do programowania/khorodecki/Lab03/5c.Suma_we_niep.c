@@ -9,7 +9,8 @@
  
 */
 
- #include <stdio.h> 
+ #include <stdio.h>
+ #include <math.h>
 
  
  int main()
@@ -25,9 +26,11 @@
 
  
  float srednia; /* zmienna do zapisania wartosci sredniej z liczb */ 
- float liczba; /* przechowuje wartosc kolejnej liczby */
+ int liczba; /* przechowuje wartosc kolejnej liczby */
  int zmienna;
- scanf("Podaj wartosc graniczna: %d",&zmienna);
+ int dzielna = 0;
+ printf("Podaj wartosc graniczna: ");
+ scanf("%d",&zmienna);
  
 
   suma = 0; 
@@ -39,10 +42,12 @@
   liczba = 0;
 
 
-  while (licznik < 300){ 
+  while (licznik < zmienna){ 
 
  
-    suma = suma + liczba; /* sumujemy liczby */
+    if (liczba%2 != 0) {suma = suma + liczba; /* sumujemy liczby */
+						dzielna = dzielna +1;
+						}
 
  
     liczba = liczba + 1; /* zwiekszamy liczbe */
@@ -55,7 +60,7 @@
 
  
 
- srednia = suma/licznik; 
+ srednia = suma/dzielna; 
 
  
 printf("\noto suma liczb %f\n",suma);
