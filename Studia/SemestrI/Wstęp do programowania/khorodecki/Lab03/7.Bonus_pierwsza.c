@@ -14,7 +14,7 @@ int main(){
     licznik = liczba;
     
     while (licznik>1){
-          if(licznik%liczba == 0) tester = tester + 1;
+          if(liczba%licznik == 0) tester = tester + 1;
           licznik = licznik-1;
           }
           
