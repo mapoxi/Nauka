@@ -32,7 +32,7 @@ int main(){
 			licznik = licznik+1;
 			wykonane = wykonane+1;
 			}
-			
+		wiersz = wiersz+1;	
 		spacja = (h-1)*2;
           
         while (spacja>0){
@@ -40,7 +40,7 @@ int main(){
                 spacja = spacja-1;
                 }
 		printf("\n");
-		h = h+1;
+		h = h-1;
           
           }
     
