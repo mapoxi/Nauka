@@ -8,7 +8,7 @@ int main(){
 	int liczba = 3;
 	int dzielna;
 	
-	printf("Program drukuje 4 pierwsze liczby doskonale.\nOto one: ");
+	printf("Program drukuje 4 pierwsze liczby doskonale.\nOto one:\n");
 	
 	while(licznik < 4){
 		suma = 0;
@@ -19,7 +19,7 @@ int main(){
 			}
 
 		if(liczba == suma){
-			printf("%d\n",liczba);
+			printf("%d %d\n",licznik,liczba);
 			licznik = licznik+1;
 			}
 			
