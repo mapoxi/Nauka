@@ -32,7 +32,8 @@ int main(){
 			licznik = licznik+1;
 			wykonane = wykonane+1;
 			}
-		wiersz = wiersz+1;	
+		wiersz = wiersz+1;
+		licznik = 0;
 		spacja = (h-1)*2;
           
         while (spacja>0){
