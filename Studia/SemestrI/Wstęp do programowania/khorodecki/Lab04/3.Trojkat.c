@@ -21,19 +21,19 @@ int main(){
 	licznik = 0;
 	
     while (h>0){
-          spacja = (h-1)*3/2;
+          spacja = (h-1)*2;
           
         while (spacja>0){
                 printf(" ");
                 spacja = spacja-1;
                 }
         while (licznik < wiersz || wykonane <=wejscie){
-			printf("%3d",wykonane);
+			printf("%4d",wykonane);
 			licznik = licznik+1;
 			wykonane = wykonane+1;
 			}
 			
-		spacja = (h-1)*3/2;
+		spacja = (h-1)*2;
           
         while (spacja>0){
                 printf(" ");
