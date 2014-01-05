@@ -25,9 +25,9 @@ int main(){
 		pocz = pocz+1;
 		kon = kon-1;
 		}
-	
-	printf("\nSlowo ");
+		
 	pocz = 0;
+	printf("\nSlowo ");
 	while(pocz < i){
 		printf("%c",tablica[pocz]);
 		pocz = pocz+1;
