@@ -20,7 +20,7 @@ int main(){
 	
 	i = i-1;
 	pocz = 0;
-	kon = i;
+	kon = i-1;
 	
 	while (kon >=0 && warunek == 0){
 		if(tablica[pocz] != tablica[kon]) warunek = 1;
