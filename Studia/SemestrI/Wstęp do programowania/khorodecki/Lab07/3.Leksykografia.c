@@ -8,7 +8,7 @@ int main(){
 	int i = 0;
 	int j = 0;
 
-	printf("Podaj 10 liczb pierwszego ci¹gu oraz po enterze 10 drugiego: ");
+	printf("Podaj 10 liczb pierwszego ciagu oraz po enterze 10 drugiego: ");
 	
 	while (petla < 20){
 		if (petla == 10){
@@ -17,6 +17,7 @@ int main(){
 			}
 		scanf("%d",&tablica[i][j]);
 		petla = petla + 1;
+		j = j+1;
 		}
 	
 	j = 0;
@@ -27,7 +28,7 @@ int main(){
 		else j = j+1;
 		}
 	
-	printf("\nLeksykograficznie wiejsza jest tablica: ");
+	printf("Leksykograficznie wieksza jest tablica: ");
 	j = 0;
 	
 	while (j < 10){
