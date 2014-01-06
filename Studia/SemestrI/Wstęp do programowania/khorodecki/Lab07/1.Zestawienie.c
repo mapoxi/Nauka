@@ -2,20 +2,23 @@
 
 int main(){
 
-	float tab[100];
+	int ujemne = 0;
+	int zero = 0;
+	int dodatnie = 0;
 	int i = 0;
-	float wejscie = 0;
+	float wejscie;
 	
-	printf("Wpisz liczby to zestawienia:\n");
+	printf("Wpisz 10 liczb do zestawienia: ");
 	
-	scanf("%f%f",&tab[0],&tab[1]);
-	printf("%f     %f",tab[0],tab[1]);
-	
-	/*while(scanf("%f",tab[i]) !={
+	while (i <10){
 		scanf("%f",&wejscie);
-		tab[i] = wejscie;
 		i = i+1;
-		}*/
+		if (wejscie < 0) ujemne = ujemne+1;
+		else if (wejscie == 0) zero = zero+1;
+		else dodatnie = dodatnie+1;
+		}
+	
+	printf("\nUjemnych jest: %d\nZer jest: %d\nDodatnich jest: %d\n",ujemne,zero,dodatnie);
  
 	return 0;
 	}
