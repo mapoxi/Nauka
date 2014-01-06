@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
 	
@@ -12,7 +13,7 @@ int main(){
 	printf("Podaj 5 liczb do kazdego z 4 ciagow: ");
 	
 	while (petla < 20){
-		if (petla%5 == 0 petla != 0){
+		if (petla%5 == 0 && petla != 0){
 			i = i+1;
 			j = 0;
 			}
@@ -20,7 +21,6 @@ int main(){
 		petla = petla + 1;
 		j = j+1;
 		}
-	
 	i = 1;
 	
 	while (i < 4){
@@ -32,12 +32,13 @@ int main(){
 				}
 		    j = j+1;
 			}
+		i = i+1;
 		}
 	
 	printf("Leksykograficznie wieksza jest tablica: ");
 	j = 0;
 	
-	while (j < 10){
+	while (j < 5){
 		printf("%d ",tablica[wynik][j]);
 		j = j+1;
 		}
