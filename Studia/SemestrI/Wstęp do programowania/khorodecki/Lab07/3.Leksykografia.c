@@ -8,14 +8,14 @@ int main(){
 	int i = 0;
 	int j = 0;
 
-	printf("Podaj 10 liczb pierwszego ci¹gu oraz po enterze 10 drugiego: );
+	printf("Podaj 10 liczb pierwszego ci¹gu oraz po enterze 10 drugiego: ");
 	
-	while (petla < 20)[
+	while (petla < 20){
 		if (petla == 10){
 			i = 1;
 			j = 0;
 			}
-		scanf("%d",tab[i][j]);
+		scanf("%d",&tablica[i][j]);
 		petla = petla + 1;
 		}
 	
