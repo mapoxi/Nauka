@@ -9,7 +9,7 @@ int main(){
 	printf("Wpisz liczby to zestawienia:\n");
 	
 	while(wejscie != (int)'\n'){
-		scanf(%f,&wejscie);
+		scanf("%f",&wejscie);
 		tab[i] = wejscie;
 		i = i+1;
 		}
