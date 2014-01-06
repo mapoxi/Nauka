@@ -32,6 +32,7 @@ int main(){
 				}
 		    j = j+1;
 			}
+		warunek = 0;
 		i = i+1;
 		}
 	
