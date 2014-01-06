@@ -13,6 +13,6 @@ int main(){
 		tab[i] = wejscie;
 		i = i+1;
 		}
-
+ 
 	return 0;
 	}
