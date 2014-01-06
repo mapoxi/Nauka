@@ -4,15 +4,15 @@ int main(){
 
 	float tab[100];
 	int i = 0;
-	int wejscie = (int)'\n';
+	int wejscie = 0;
 	
-	printf("Wpisz liczby to zestawienia: %d\n",wejscie);
+	printf("Wpisz liczby to zestawienia: \n");
 	
-	/*while(wejscie != (int)'\n'){
+	while(wejscie != '\n'){
 		scanf("%f",&wejscie);
 		tab[i] = wejscie;
 		i = i+1;
-		}*/
+		}
  
 	return 0;
 	}
