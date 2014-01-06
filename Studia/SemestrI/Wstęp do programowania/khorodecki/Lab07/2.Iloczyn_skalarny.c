@@ -6,19 +6,19 @@ int main(){
 	int b[10];
 	int i=0;
 	
-	printf("Podaj 10 liczb do tablicy a: );
+	printf("Podaj 10 liczb do tablicy a: ");
 	
 	while (i < 10){
-		scanf("%d",&a[i];
-		i = i+;
+		scanf("%d",&a[i]);
+		i = i+1;
 		}
 		
-	printf("Podaj 10 liczb do tablicy b: );
+	printf("Podaj 10 liczb do tablicy b: ");
 	
 	i = 0;
 	while (i < 10){
-		scanf("%d",&b[i];
-		i = i+;
+		scanf("%d",&b[i]);
+		i = i+1;
 		}
 	
 	i = 0;
