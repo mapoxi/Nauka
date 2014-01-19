@@ -2,6 +2,8 @@
 
 int tablica[3][100];
 
+
+/*Czysci tablice przed zapisaniem do niej danych*/
 void czysc(){
 	int i = 0;
 	int j = 0;
@@ -11,20 +13,30 @@ void czysc(){
 			tablica[i][j] = 0;
 }
 
+/*Menu programu*/
+void menu(int i){
+	if (i == 1) dodawanie();
+
+
+
+}
+
+/*Funkcja dodawania*/
+void dodawanie(){
+	printf("Wybrano dodawanie dwoch duzych liczb.\n");
+}
+
 int main(){
 	
-	char wejscie;
-	int i = 10;
+	int i = 0;
 	
 	while(i != 5){
 		czysc();
 		printf("wybierz dzialanie:\n1. Dodawanie\n2. Odejmowanie\n3. Mnozenie\n4. Dzielenie\n5. Exit\n");
 		scanf("%d",&i);
-		printf("Wybrano: %d\n",i);
+		menu(i);
 	}
-	getchar();
-	scanf("%c",&wejscie);
-	printf("%d\n",tablica[1][50]);
+
 
 
 return 0;
