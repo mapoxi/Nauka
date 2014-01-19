@@ -4,12 +4,6 @@ int tablica[3][100];
 int znak;
 int dlugosc;
 
-/*Funkcja dodawania*/
-void dodawanie(){	
-	printf("Wybrano dodawanie dwoch duzych liczb.%d\n");
-	wejscie(1);
-}
-
 /*Czysci tablice przed zapisaniem do niej danych*/
 void czysc(){
 	int i = 0;
@@ -32,9 +26,14 @@ void wejscie(int liczba){
 	
 	scanf("%c",&cyfra);
 	printf("%d\n",cyfra);
-	
-	
 }
+
+/*Funkcja dodawania*/
+void dodawanie(){	
+	printf("Wybrano dodawanie dwoch duzych liczb.%d\n");
+	wejscie(1);
+}
+
 /*Menu programu*/
 void menu(int wybor_menu){
 	if (wybor_menu == 1) dodawanie();
@@ -42,8 +41,6 @@ void menu(int wybor_menu){
 
 
 }
-
-
 
 int main(){
 	
