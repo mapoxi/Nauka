@@ -24,6 +24,7 @@ void wejscie(int liczba){
 	if(liczba == 1) printf("Podaj pierwsza liczbe: ");
 	else printf("Podaj druga liczbe: \n");
 	
+	getchar();
 	scanf("%c",&cyfra);
 	printf("%d\n",cyfra);
 }
@@ -36,6 +37,7 @@ void dodawanie(){
 
 /*Menu programu*/
 void menu(int wybor_menu){
+	czysc();
 	if (wybor_menu == 1) dodawanie();
 
 
@@ -46,10 +48,9 @@ int main(){
 	
 	int sterownik = 0;
 	while(sterownik != 5){
-		czysc();
 		printf("wybierz dzialanie:\n1. Dodawanie\n2. Odejmowanie\n3. Mnozenie\n4. Dzielenie\n5. Exit\n");
 		scanf("%d",&sterownik);
-		menu(sterownik);
+		if(sterownik != 5) menu(sterownik);
 	}
 
 
