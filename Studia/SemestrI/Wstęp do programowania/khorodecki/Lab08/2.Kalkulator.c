@@ -22,17 +22,21 @@ void wejscie(int liczba){
 	dlugosc = 0;
 
 	if(liczba == 1) printf("Podaj pierwsza liczbe: ");
-	else printf("Podaj druga liczbe: \n");
+	else printf("Podaj druga liczbe: ");
 	
 	getchar();
 	scanf("%c",&cyfra);
-	printf("%d\n",cyfra);
+	if (cyfra == '-') znak = -1;
+	else {
+		tablica[liczba][0] = (int)cyfra;
+		printf("\n%d",tablica[0][0]);
+	}
 }
 
 /*Funkcja dodawania*/
 void dodawanie(){	
 	printf("Wybrano dodawanie dwoch duzych liczb.\n");
-	wejscie(1);
+	wejscie(0);
 }
 
 /*Menu programu*/
