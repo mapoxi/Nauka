@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int tablica[3][100];
+
 int main(){
 	
 	int i = 10;
