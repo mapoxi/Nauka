@@ -2,6 +2,10 @@
 
 int tablica[3][100];
 
+/*Funkcja dodawania*/
+void dodawanie(){
+	printf("Wybrano dodawanie dwoch duzych liczb.\n");
+}
 
 /*Czysci tablice przed zapisaniem do niej danych*/
 void czysc(){
@@ -21,10 +25,7 @@ void menu(int i){
 
 }
 
-/*Funkcja dodawania*/
-void dodawanie(){
-	printf("Wybrano dodawanie dwoch duzych liczb.\n");
-}
+
 
 int main(){
 	
