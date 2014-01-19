@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 int tablica[3][100];
+int znak;
+int dlugosc;
 
 /*Funkcja dodawania*/
-void dodawanie(){
-	printf("Wybrano dodawanie dwoch duzych liczb.%d\n",tablica[0][0]);
+void dodawanie(){	
+	printf("Wybrano dodawanie dwoch duzych liczb.%d\n");
+	wejscie(1);
 }
 
 /*Czysci tablice przed zapisaniem do niej danych*/
@@ -17,9 +20,24 @@ void czysc(){
 			tablica[i][j] = 0;
 }
 
+/*Wczytywanie duzych liczb*/
+void wejscie(int liczba){
+
+	char cyfra = "0";
+	znak = 0;
+	dlugosc = 0;
+
+	if(liczba == 1) printf("Podaj pierwsza liczbe: ");
+	else printf("Podaj druga liczbe: \n");
+	
+	scanf("%c",&cyfra);
+	printf("%d\n",cyfra);
+	
+	
+}
 /*Menu programu*/
-void menu(int i){
-	if (i == 1) dodawanie();
+void menu(int wybor_menu){
+	if (wybor_menu == 1) dodawanie();
 
 
 
@@ -29,13 +47,12 @@ void menu(int i){
 
 int main(){
 	
-	int i = 0;
-	while(i != 5){
+	int sterownik = 0;
+	while(sterownik != 5){
 		czysc();
 		printf("wybierz dzialanie:\n1. Dodawanie\n2. Odejmowanie\n3. Mnozenie\n4. Dzielenie\n5. Exit\n");
-		scanf("%d",&i);
-		tablica[0][0] = 5;
-		menu(i);
+		scanf("%d",&sterownik);
+		menu(sterownik);
 	}
 
 
