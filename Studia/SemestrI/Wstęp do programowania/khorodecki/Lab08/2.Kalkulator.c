@@ -4,7 +4,7 @@ int tablica[3][100];
 
 /*Funkcja dodawania*/
 void dodawanie(){
-	printf("Wybrano dodawanie dwoch duzych liczb.\n");
+	printf("Wybrano dodawanie dwoch duzych liczb.%d\n",tablica[0][0]);
 }
 
 /*Czysci tablice przed zapisaniem do niej danych*/
