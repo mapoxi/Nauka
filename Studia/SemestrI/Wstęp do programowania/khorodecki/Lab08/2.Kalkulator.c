@@ -12,9 +12,9 @@ int main(){
 		scanf("%d",&i);
 		printf("Wybrano: %d\n",i);
 	}
-scanf("%c",&wejscie);
-
-printf("%d\n",wejscie);
+	getchar();
+	scanf("%c",&wejscie);
+	printf("%d\n",wejscie);
 
 
 return 0;
