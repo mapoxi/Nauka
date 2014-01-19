@@ -30,11 +30,11 @@ void menu(int i){
 int main(){
 	
 	int i = 0;
-	
 	while(i != 5){
 		czysc();
 		printf("wybierz dzialanie:\n1. Dodawanie\n2. Odejmowanie\n3. Mnozenie\n4. Dzielenie\n5. Exit\n");
 		scanf("%d",&i);
+		tablica[0][0] = 5;
 		menu(i);
 	}
 
