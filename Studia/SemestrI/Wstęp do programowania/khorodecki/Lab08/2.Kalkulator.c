@@ -24,7 +24,7 @@ int main(){
 	}
 	getchar();
 	scanf("%c",&wejscie);
-	printf("%d\n",wejscie);
+	printf("%d\n",tablica[1][50]);
 
 
 return 0;
