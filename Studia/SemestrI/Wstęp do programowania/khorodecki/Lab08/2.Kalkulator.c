@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-char tablica[3][100];
+int tablica[3][100];
 
 int main(){
 	
+	char wejscie;
 	int i = 10;
 	
 	while(i != 5){
@@ -11,9 +12,10 @@ int main(){
 		scanf("%d",&i);
 		printf("Wybrano: %d\n",i);
 	}
-getchar();
-scanf("%c",&tablica[0][0]);
-printf("%c\n",tablica[0][0]);
+scanf("%c",&wejscie);
+
+printf("%d\n",wejscie);
+
 
 return 0;
 }
