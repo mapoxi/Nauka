@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int tablica[3][100];
+char tablica[3][100];
 
 int main(){
 	
@@ -11,7 +11,9 @@ int main(){
 		scanf("%d",&i);
 		printf("Wybrano: %d\n",i);
 	}
-
+getchar();
+scanf("%c",&tablica[0][0]);
+printf("%c\n",tablica[0][0]);
 
 return 0;
 }
