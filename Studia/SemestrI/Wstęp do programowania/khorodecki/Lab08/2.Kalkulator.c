@@ -30,7 +30,7 @@ void wejscie(int liczba){
 
 /*Funkcja dodawania*/
 void dodawanie(){	
-	printf("Wybrano dodawanie dwoch duzych liczb.%d\n");
+	printf("Wybrano dodawanie dwoch duzych liczb.\n");
 	wejscie(1);
 }
 
