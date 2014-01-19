@@ -28,7 +28,7 @@ void wejscie(int liczba){
 	scanf("%c",&cyfra);
 	if (cyfra == '-') znak = -1;
 	else {
-		tablica[liczba][0] = (int)cyfra;
+		tablica[liczba][0] = cyfra-48;
 		printf("\n%d",tablica[0][0]);
 	}
 }
