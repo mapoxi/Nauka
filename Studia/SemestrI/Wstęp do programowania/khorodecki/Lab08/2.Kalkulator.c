@@ -17,7 +17,7 @@ void czysc(){
 /*Wczytywanie duzych liczb*/
 void wejscie(int liczba){
 
-	char cyfra = "0";
+	char cyfra;
 	znak = 0;
 	dlugosc = 0;
 
