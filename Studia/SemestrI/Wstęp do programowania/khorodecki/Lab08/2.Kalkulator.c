@@ -17,7 +17,7 @@ void czysc(){
 /*Wczytywanie duzych liczb*/
 void wejscie(int liczba){
 
-	char cyfra;
+	char cyfra = '0';
 	int licznik = 0;
 
 	if(liczba == 0) printf("Podaj pierwsza liczbe: ");
