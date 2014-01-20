@@ -50,6 +50,7 @@ void wejscie(int liczba){
 /*Funkcja dodawania*/
 void dodawanie(){	
 	printf("Wybrano dodawanie dwoch duzych liczb.\n\n");
+	getchar();
 	wejscie(0);
 	wejscie(1);
 	printf("%d%d%d%d%d\n",tablica[0][0],tablica[0][1],tablica[0][2],tablica[0][3],tablica[0][4]);
