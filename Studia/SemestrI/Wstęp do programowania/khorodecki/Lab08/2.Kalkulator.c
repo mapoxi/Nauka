@@ -84,6 +84,10 @@ void dodawanie(){
 		suma -= 1;
 	}
 	
+	if (dlugosc[0]>dlugosc[1]) suma = dlugosc[0];
+	else suma = dlugosc[1];
+	
+	for (i = 0; i <= suma; i += 1) printf("%d",tablica[2][i]);
 	
 }
 
