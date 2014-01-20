@@ -39,7 +39,8 @@ void wejscie(int liczba){
 			licznik += 1;
 		}
 	}
-		
+	
+	dlugosc[liczba] = licznik;
 	
 }
 
@@ -47,6 +48,8 @@ void wejscie(int liczba){
 void dodawanie(){	
 	printf("Wybrano dodawanie dwoch duzych liczb.\n");
 	wejscie(0);
+	printf("%d%d%d%d\n",tablica[0][0],tablica[0][1],tablica[0][2],tablica[0][3]);
+	printf("Znak: %d, dlugosc: %d\n",znak[0], dlugosc[0]);
 }
 
 /*Menu programu*/
