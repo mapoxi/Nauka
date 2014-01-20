@@ -49,9 +49,12 @@ void dodawanie(){
 	if (dlugosca>dlugoscb) suma = dlugosca;
 	else suma = dlugoscb;
 	
+	printf("Liczba 1: %d%d%d%d\n",tablica[0][0],tablica[0][1],tablica[0][2],tablica[0][3]);
+	printf("Liczba 1: %d%d%d%d\n",tablica[1][0],tablica[1][1],tablica[1][2],tablica[1][3]);
+	printf("Suma, dlugosca, dlugoscb: %d %d %d\n", suma,dlugosca,dlugoscb);
+	
 	while(dlugosca >=0 && dlugoscb >=0){
 		tablica[2][suma] += tablica[0][dlugosca] + tablica[1][dlugoscb];
-		printf("%d\n",tablica[2][suma]);
 		if (suma == 0 && tablica[2][suma] > 9){
 			tablica[2][suma] -= 10;
 			printf("1");
