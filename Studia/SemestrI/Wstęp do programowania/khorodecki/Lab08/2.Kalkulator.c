@@ -23,7 +23,7 @@ void wejscie(int liczba){
 	if(liczba == 0) printf("Podaj pierwsza liczbe: ");
 	else printf("Podaj druga liczbe: ");
 	
-	getchar();
+	//getchar();
 	scanf("%c",&cyfra);
 	if (cyfra == '-'){
 		znak[liczba] = -1;
