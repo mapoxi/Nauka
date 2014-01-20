@@ -23,7 +23,6 @@ void wejscie(int liczba){
 	if(liczba == 0) printf("Podaj pierwsza liczbe: ");
 	else printf("Podaj druga liczbe: ");
 	
-	//getchar();
 	scanf("%c",&cyfra);
 	if (cyfra == '-'){
 		znak[liczba] = -1;
@@ -53,11 +52,6 @@ void dodawanie(){
 	getchar();
 	wejscie(0);
 	wejscie(1);
-	printf("%d%d%d%d%d\n",tablica[0][0],tablica[0][1],tablica[0][2],tablica[0][3],tablica[0][4]);
-	printf("Znak: %d, dlugosc: %d\n",znak[0], dlugosc[0]);
-	printf("%d%d%d%d%d\n",tablica[1][0],tablica[1][1],tablica[1][2],tablica[1][3],tablica[1][4]);
-	printf("Znak: %d, dlugosc: %d\n",znak[1], dlugosc[1]);
-	getchar();
 }
 
 /*Menu programu*/
