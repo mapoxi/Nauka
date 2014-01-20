@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int tablica[3][100];
-int znak;
-int dlugosc;
+int znak[2];
+int dlugosc[2];
 
 /*Czysci tablice przed zapisaniem do niej danych*/
 void czysc(){
@@ -18,19 +18,29 @@ void czysc(){
 void wejscie(int liczba){
 
 	char cyfra;
-	znak = 0;
-	dlugosc = 0;
+	int licznik = 0;
 
-	if(liczba == 1) printf("Podaj pierwsza liczbe: ");
+	if(liczba == 0) printf("Podaj pierwsza liczbe: ");
 	else printf("Podaj druga liczbe: ");
 	
 	getchar();
 	scanf("%c",&cyfra);
-	if (cyfra == '-') znak = -1;
+	if (cyfra == '-') znak[liczba] = -1;
 	else {
+		znak[liczba] = 1;
 		tablica[liczba][0] = cyfra-48;
-		printf("\n%d",tablica[0][0]);
+		licznik = 1;
 	}
+	
+	while ((cyfra-48)>=0 && (cyfra-48)<=9){
+		scanf("%c",&cyfra);
+		if ((cyfra-48)>=0 && (cyfra-48)<=9){
+			tablica[liczba][licznik] = cyfra-48;
+			licznik += 1;
+		}
+	}
+		
+	
 }
 
 /*Funkcja dodawania*/
@@ -42,6 +52,11 @@ void dodawanie(){
 /*Menu programu*/
 void menu(int wybor_menu){
 	czysc();
+	znak[0] = 0;
+	znak[1] = 0;
+	dlugosc[0] = 0;
+	dlugosc[1] = 1;
+	
 	if (wybor_menu == 1) dodawanie();
 
 
