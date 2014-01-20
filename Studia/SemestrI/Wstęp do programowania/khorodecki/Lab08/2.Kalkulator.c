@@ -50,6 +50,7 @@ void dodawanie(){
 	wejscie(0);
 	printf("%d%d%d%d%d\n",tablica[0][0],tablica[0][1],tablica[0][2],tablica[0][3],tablica[0][4]);
 	printf("Znak: %d, dlugosc: %d\n",znak[0], dlugosc[0]);
+	getchar();
 }
 
 /*Menu programu*/
