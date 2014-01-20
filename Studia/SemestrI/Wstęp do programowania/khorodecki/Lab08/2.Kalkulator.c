@@ -23,17 +23,6 @@ void wejscie(int liczba){
 	if(liczba == 0) printf("Podaj pierwsza liczbe: ");
 	else printf("Podaj druga liczbe: ");
 	
-	scanf("%c",&cyfra);
-	if (cyfra == '-'){
-		znak[liczba] = -1;
-		cyfra = '0';
-	}
-	else {
-		znak[liczba] = 1;
-		tablica[liczba][0] = cyfra-48;
-		licznik = 1;
-	}
-	
 	while ((cyfra-48)>=0 && (cyfra-48)<=9){
 		scanf("%c",&cyfra);
 		if ((cyfra-48)>=0 && (cyfra-48)<=9){
@@ -42,16 +31,60 @@ void wejscie(int liczba){
 		}
 	}
 	
-	dlugosc[liczba] = licznik;
+	dlugosc[liczba] = licznik-1;
 	
 }
 
 /*Funkcja dodawania*/
 void dodawanie(){	
-	printf("Wybrano dodawanie dwoch duzych liczb.\n\n");
+	int suma,dlugosca,dlugoscb;
+	dlugosca = dlugosc[0];
+	dlugoscb = dlugosc[1];
+	
+	printf("Wybrano dodawanie dwoch duzych nieujemnych liczb.\n\n");
 	getchar();
 	wejscie(0);
 	wejscie(1);
+	
+	if (dlugosca>dlugoscb) suma = dlugosca;
+	else suma = dlugoscb;
+	
+	while(dlugosca >=0 && dlugoscb >=0){
+		tablica[2][suma] += tablica[0][dlugosca] + tablica[1][dlugoscb];
+		if (suma == 0 && tablica[2][suma] > 9){
+			tablica[2][suma] -= 10;
+			printf("1");
+		}
+		else if (tablica[2][suma] > 9){
+			tablica[2][suma] -= 10;
+			tablica[2][suma-1] += 1;
+		}
+		dlugosca -= 1;
+		dlugoscb -= 1;
+		suma -= 1;
+	}
+	
+	if (dlugosca >= 0){
+		dlugoscb = dlugosca;
+		dlugosca = 0;
+	}
+	else dlugosca = 1;
+	
+	while (suma >= 0){
+		tablica[2][suma] += tablica[dlugosca][dlugoscb];
+		if (suma == 0 && tablica[2][suma] > 9){
+			tablica[2][suma] -= 10;
+			printf("1");
+		}
+		else if (tablica[2][suma] > 9){
+			tablica[2][suma] -= 10;
+			tablica[2][suma-1] += 1;
+		}
+		dlugoscb -= 1;
+		suma -= 1;
+	}
+	
+	
 }
 
 /*Menu programu*/
