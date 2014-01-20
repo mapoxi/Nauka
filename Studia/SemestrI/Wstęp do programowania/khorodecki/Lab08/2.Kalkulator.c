@@ -41,7 +41,6 @@ void wejscie(int liczba){
 	}
 	
 	dlugosc[liczba] = licznik;
-	getchar();
 	
 }
 
