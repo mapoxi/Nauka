@@ -38,13 +38,14 @@ void wejscie(int liczba){
 /*Funkcja dodawania*/
 void dodawanie(){	
 	int suma,dlugosca,dlugoscb;
-	dlugosca = dlugosc[0];
-	dlugoscb = dlugosc[1];
 	
 	printf("Wybrano dodawanie dwoch duzych nieujemnych liczb.\n\n");
 	getchar();
 	wejscie(0);
 	wejscie(1);
+
+	dlugosca = dlugosc[0];
+	dlugoscb = dlugosc[1];
 	
 	if (dlugosca>dlugoscb) suma = dlugosca;
 	else suma = dlugoscb;
