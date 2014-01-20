@@ -43,16 +43,14 @@ void dodawanie(){
 	getchar();
 	wejscie(0);
 	wejscie(1);
-
+	
+	printf("Suma to: ");
+	
 	dlugosca = dlugosc[0];
 	dlugoscb = dlugosc[1];
 	
 	if (dlugosca>dlugoscb) suma = dlugosca;
 	else suma = dlugoscb;
-	
-	printf("Liczba 1: %d%d%d%d\n",tablica[0][0],tablica[0][1],tablica[0][2],tablica[0][3]);
-	printf("Liczba 1: %d%d%d%d\n",tablica[1][0],tablica[1][1],tablica[1][2],tablica[1][3]);
-	printf("Suma, dlugosca, dlugoscb: %d %d %d\n", suma,dlugosca,dlugoscb);
 	
 	while(dlugosca >=0 && dlugoscb >=0){
 		tablica[2][suma] += tablica[0][dlugosca] + tablica[1][dlugoscb];
@@ -93,6 +91,7 @@ void dodawanie(){
 	else suma = dlugosc[1];
 	
 	for (dlugoscb = 0; dlugoscb <= suma; dlugoscb += 1) printf("%d",tablica[2][dlugoscb]);
+	getchar();
 	
 }
 
