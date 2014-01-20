@@ -91,7 +91,7 @@ void dodawanie(){
 	else suma = dlugosc[1];
 	
 	for (dlugoscb = 0; dlugoscb <= suma; dlugoscb += 1) printf("%d",tablica[2][dlugoscb]);
-	printf("\nNacisnij dowolny klawisz, aby kontynuowac...");
+	printf("\nNacisnij enter, aby kontynuowac...");
 	getchar();
 	
 }
