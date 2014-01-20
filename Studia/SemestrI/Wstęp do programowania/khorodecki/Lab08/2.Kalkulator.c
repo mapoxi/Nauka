@@ -25,7 +25,10 @@ void wejscie(int liczba){
 	
 	getchar();
 	scanf("%c",&cyfra);
-	if (cyfra == '-') znak[liczba] = -1;
+	if (cyfra == '-'){
+		znak[liczba] = -1;
+		cyfra = '0';
+	}
 	else {
 		znak[liczba] = 1;
 		tablica[liczba][0] = cyfra-48;
