@@ -51,6 +51,7 @@ void dodawanie(){
 	
 	while(dlugosca >=0 && dlugoscb >=0){
 		tablica[2][suma] += tablica[0][dlugosca] + tablica[1][dlugoscb];
+		printf("%d\n",tablica[2][suma]);
 		if (suma == 0 && tablica[2][suma] > 9){
 			tablica[2][suma] -= 10;
 			printf("1");
